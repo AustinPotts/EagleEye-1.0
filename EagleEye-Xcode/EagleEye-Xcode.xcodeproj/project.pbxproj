@@ -13,6 +13,13 @@
 		454E4AEE23C9286E00BB6C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454E4AED23C9286E00BB6C4D /* Assets.xcassets */; };
 		454E4AF123C9286E00BB6C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454E4AEF23C9286E00BB6C4D /* LaunchScreen.storyboard */; };
 		454E4AFB23C9378E00BB6C4D /* OnboardOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454E4AFA23C9378E00BB6C4D /* OnboardOneViewController.swift */; };
+		45942FA723C9456E009EE10F /* Onboard2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45942FA623C9456E009EE10F /* Onboard2ViewController.swift */; };
+		45942FA923CB8354009EE10F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45942FA823CB8354009EE10F /* MapViewController.swift */; };
+		45942FAD23CB8C02009EE10F /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45942FAC23CB8C02009EE10F /* Quake.swift */; };
+		45942FAF23CB8C20009EE10F /* Quake+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45942FAE23CB8C20009EE10F /* Quake+Mapping.swift */; };
+		45942FB223CB8C45009EE10F /* CoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45942FB123CB8C45009EE10F /* CoordinateRegion.swift */; };
+		45942FB423CB8C5F009EE10F /* QuakeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45942FB323CB8C5F009EE10F /* QuakeFetcher.swift */; };
+		45942FB623CB8CDF009EE10F /* QuakeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45942FB523CB8CDF009EE10F /* QuakeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		454E4AF023C9286E00BB6C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		454E4AF223C9286E00BB6C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		454E4AFA23C9378E00BB6C4D /* OnboardOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardOneViewController.swift; sourceTree = "<group>"; };
+		45942FA623C9456E009EE10F /* Onboard2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboard2ViewController.swift; sourceTree = "<group>"; };
+		45942FA823CB8354009EE10F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		45942FAC23CB8C02009EE10F /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
+		45942FAE23CB8C20009EE10F /* Quake+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Mapping.swift"; sourceTree = "<group>"; };
+		45942FB123CB8C45009EE10F /* CoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateRegion.swift; sourceTree = "<group>"; };
+		45942FB323CB8C5F009EE10F /* QuakeFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeFetcher.swift; sourceTree = "<group>"; };
+		45942FB523CB8CDF009EE10F /* QuakeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 		454E4AE323C9286A00BB6C4D /* EagleEye-Xcode */ = {
 			isa = PBXGroup;
 			children = (
+				45942FB023CB8C33009EE10F /* Networking */,
 				454E4AFF23C93F0F00BB6C4D /* View Controllers */,
 				454E4AFE23C93EDE00BB6C4D /* Views */,
 				454E4AFD23C93ED900BB6C4D /* Controllers */,
@@ -73,6 +88,8 @@
 		454E4AFC23C93ED500BB6C4D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				45942FAC23CB8C02009EE10F /* Quake.swift */,
+				45942FAE23CB8C20009EE10F /* Quake+Mapping.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +104,7 @@
 		454E4AFE23C93EDE00BB6C4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				45942FB523CB8CDF009EE10F /* QuakeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,8 +113,19 @@
 			isa = PBXGroup;
 			children = (
 				454E4AFA23C9378E00BB6C4D /* OnboardOneViewController.swift */,
+				45942FA623C9456E009EE10F /* Onboard2ViewController.swift */,
+				45942FA823CB8354009EE10F /* MapViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		45942FB023CB8C33009EE10F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				45942FB123CB8C45009EE10F /* CoordinateRegion.swift */,
+				45942FB323CB8C5F009EE10F /* QuakeFetcher.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				454E4AE523C9286A00BB6C4D /* AppDelegate.swift in Sources */,
+				45942FB623CB8CDF009EE10F /* QuakeDetailView.swift in Sources */,
+				45942FAD23CB8C02009EE10F /* Quake.swift in Sources */,
+				45942FA723C9456E009EE10F /* Onboard2ViewController.swift in Sources */,
+				45942FB423CB8C5F009EE10F /* QuakeFetcher.swift in Sources */,
+				45942FAF23CB8C20009EE10F /* Quake+Mapping.swift in Sources */,
 				454E4AFB23C9378E00BB6C4D /* OnboardOneViewController.swift in Sources */,
+				45942FB223CB8C45009EE10F /* CoordinateRegion.swift in Sources */,
+				45942FA923CB8354009EE10F /* MapViewController.swift in Sources */,
 				454E4AE723C9286A00BB6C4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

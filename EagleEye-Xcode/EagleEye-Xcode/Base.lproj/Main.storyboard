@@ -84,15 +84,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fHk-nd-bkb"/>
                     </view>
+                    <connections>
+                        <outlet property="learnMore" destination="ske-pg-1BE" id="WJc-fm-4rh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQ5-RW-VAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="155.07246376811597" y="194.86607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboard2 View Controller-->
         <scene sceneID="UfC-um-pKU">
             <objects>
-                <viewController id="bky-KH-J1x" sceneMemberID="viewController">
+                <viewController id="bky-KH-J1x" customClass="Onboard2ViewController" customModule="EagleEye_Xcode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Kg-nu-Vii">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,40 +187,39 @@
                         <viewLayoutGuide key="safeArea" id="bSJ-Zn-ZGf"/>
                     </view>
                     <navigationItem key="navigationItem" id="Lz3-XG-qQx"/>
+                    <connections>
+                        <outlet property="letsGo" destination="fKG-tV-arI" id="eli-Il-Fa5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6QB-yf-auJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="908.69565217391312" y="194.86607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="fH0-if-ZBc">
             <objects>
-                <viewController id="a8k-ea-9Zt" sceneMemberID="viewController">
+                <viewController id="a8k-ea-9Zt" customClass="MapViewController" customModule="EagleEye_Xcode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qKj-IN-mfL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="riT-u8-WXm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </mapView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Fo7-0T-Aot">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="riT-u8-WXm" secondAttribute="bottom" id="4eP-M1-rPK"/>
-                            <constraint firstItem="Fo7-0T-Aot" firstAttribute="top" secondItem="Mg1-Bg-dvC" secondAttribute="top" id="IsV-fs-LeS"/>
                             <constraint firstItem="riT-u8-WXm" firstAttribute="trailing" secondItem="Mg1-Bg-dvC" secondAttribute="trailing" id="TSe-2b-Lqd"/>
-                            <constraint firstItem="Fo7-0T-Aot" firstAttribute="trailing" secondItem="Mg1-Bg-dvC" secondAttribute="trailing" id="YxF-Ee-f5G"/>
-                            <constraint firstItem="Fo7-0T-Aot" firstAttribute="leading" secondItem="Mg1-Bg-dvC" secondAttribute="leading" id="chU-Ys-ADe"/>
-                            <constraint firstItem="riT-u8-WXm" firstAttribute="top" secondItem="Mg1-Bg-dvC" secondAttribute="top" constant="44" id="eAc-zB-KWO"/>
+                            <constraint firstItem="riT-u8-WXm" firstAttribute="top" secondItem="Mg1-Bg-dvC" secondAttribute="top" id="eAc-zB-KWO"/>
                             <constraint firstItem="riT-u8-WXm" firstAttribute="leading" secondItem="Mg1-Bg-dvC" secondAttribute="leading" id="irg-QF-TGZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mg1-Bg-dvC"/>
                     </view>
                     <navigationItem key="navigationItem" id="q4g-jU-Fod"/>
+                    <connections>
+                        <outlet property="mapView" destination="riT-u8-WXm" id="k0o-B4-Grf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPp-9H-9hT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

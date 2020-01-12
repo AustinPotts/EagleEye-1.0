@@ -1,5 +1,5 @@
 //
-//  OnboardOneViewController.swift
+//  Onboard2ViewController.swift
 //  EagleEye-Xcode
 //
 //  Created by Austin Potts on 1/10/20.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class OnboardOneViewController: UIViewController {
+class Onboard2ViewController: UIViewController {
 
-    @IBOutlet weak var learnMore: UIButton!
+    @IBOutlet weak var letsGo: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        learnMore.layer.cornerRadius = 20
+  
+        letsGo.layer.cornerRadius = 30
         // Do any additional setup after loading the view.
     }
     
